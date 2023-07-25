@@ -12,16 +12,26 @@
     "test:watch": "jest --watchAll"
   },
   "dependencies": {
+    "@babel/preset-react": "^7.22.5",
+    "@testing-library/react": "^14.0.0",
+    "jest-environment-jsdom": "^29.6.1",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "whatwg-fetch": "^3.6.17"
   },
   "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "@babel/plugin-syntax-jsx": "^7.22.5",
+    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-typescript": "^7.22.5",
+    "@types/jest": "^29.5.3",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
     "@typescript-eslint/eslint-plugin": "^5.61.0",
     "@typescript-eslint/parser": "^5.61.0",
     "@vitejs/plugin-react": "^4.0.1",
+    "babel-jest": "^29.6.1",
     "eslint": "^8.44.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.1",

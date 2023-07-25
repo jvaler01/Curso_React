@@ -1,18 +1,6 @@
-
-
-
-const nombre   = 'Fernando';
-const apellido = 'Herrera';
-
-
-// const nombreCompleto = nombre + ' ' + apellido;
-const nombreCompleto = `${ nombre } ${ apellido }`;
-
-console.log( nombreCompleto );
-
-
-function getSaludo(nombre) {
+/* eslint-disable @typescript-eslint/restrict-plus-operands */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+/* eslint-disable @typescript-eslint/restrict-template-expressions */
+export function getSaludo(nombre) {
     return 'Hola ' + nombre;
 }
-
-console.log( `Este es un texto: ${ getSaludo( nombre ) }  ` );
