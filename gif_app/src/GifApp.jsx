@@ -1,18 +1,19 @@
 import {useState} from "react";
+import {AddCategory} from "./components/AddCategory.jsx";
 
 export const GifApp = () => {
-    const [catedories, setCatedories] = useState([ 'Star Wars' ]);
-    const onAddCategory = () => {
-        setCatedories([...catedories, 'CyberPunk'])
+    const [categories, setCategories] = useState([ 'Star Wars' ]);
+    const onAddCategory = ( newCategory ) => {
+        setCategories([...categories, newCategory])
     }
 
     return (
         <>
             <h1>GifApp</h1>
-            <button onClick={onAddCategory}>Add category</button>
+            <AddCategory onNewCategory={ onAddCategory } />
             <ol>
                 {
-                    catedories.map(item => {
+                    categories.map(item => {
                         return <li key={ item }> { item }</li>
                     })
                 }
